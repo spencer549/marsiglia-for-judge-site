@@ -1268,6 +1268,17 @@ html{-webkit-text-size-adjust:100%}
 
 .site-home .ftpend{font-size:13.5px;color:#a8b0e4;margin:0 0 6px}
 
+.site-home .ftcon{font-size:13.5px;color:#a8b0e4;margin:0 0 8px;line-height:1.5}
+
+.site-home .ftcon.addr span{display:block;margin-top:2px}
+
+.site-home .ftcon a,.site-home .ftcon span{color:#e6e9ff}
+
+.site-home .ftcon a{text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1px}
+
+
+@media (hover:hover) and (pointer:fine){.site-home .ftcon a:hover{color:#fff}}
+
 .site-home .ftpend em{color:#f0c675;font-style:normal;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;
   border:1px solid #6b5320;background:#3a2c10;border-radius:4px;padding:2px 6px;margin-left:5px}
 
@@ -3388,6 +3399,17 @@ html{-webkit-text-size-adjust:100%}
 
 .site-inner .ftpend{font-size:13px;margin-bottom:6px}
 
+.site-inner .ftcon{font-size:13px;margin:0 0 8px;line-height:1.5}
+
+.site-inner .ftcon.addr span{display:block;margin-top:2px}
+
+.site-inner .ftcon a,.site-inner .ftcon span{color:#fff}
+
+.site-inner .ftcon a{text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1px}
+
+
+@media (hover:hover) and (pointer:fine){.site-inner .ftcon a:hover{opacity:.85}}
+
 .site-inner .ftpend em{font-style:normal;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;
   background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:4px;
   padding:2px 6px;margin-left:5px}
@@ -3757,6 +3779,10 @@ html{-webkit-text-size-adjust:100%}
 
 .site-inner .statband .st{background:var(--paper);padding:var(--s3) var(--s3) var(--s3) var(--s4)}
 
+/* An odd cell count in a two-column band leaves the grid's own line colour showing as
+   a dead half-cell. The last figure spans instead. */
+.site-inner .statband.three .st:last-child{grid-column:1/-1}
+
 .site-inner .statband .st b{font-size:34px;letter-spacing:-.02em}
 
 .site-inner .statband .st span{font-size:12.5px;max-width:22ch;margin-top:6px}
@@ -3997,8 +4023,8 @@ body{background:#fff}
     <img data-img="hero" alt="Michael Marsiglia, campaign portrait, with the lakefront behind him" class="heroimg" loading="eager" fetchpriority="high" decoding="async" style="object-position:57.322% 32.8021%">
     <div class="scrim"></div>
     <div class="hcopy">
-      <p class="eyebrow">Judge, First Parish Court, Division A</p>
-      <div class="heroproof kicker"><span class="hp-item"><b>20+</b> years in Louisiana courts</span><span class="hp-item"><b>25,000</b> docketed matters</span><span class="hp-item"><b>300+</b> mediations</span><span class="hp-item">Judge Pro Tempore</span><span class="hp-item">Tulane Law adjunct faculty</span></div>
+      <p class="eyebrow">First Parish Court, Division A</p>
+      <div class="heroproof kicker"><span class="hp-item"><b>20+</b> years in Louisiana courts</span><span class="hp-item"><b>25,000</b> docketed traffic matters</span><span class="hp-item"><b>300+</b> mediations</span><span class="hp-item">Appointed Judge Pro Tempore</span><span class="hp-item">Tulane Law adjunct faculty</span><span class="hp-item">Ad Hoc Justice of the Peace</span></div>
       <h1>Michael Marsiglia <em>for Judge</em></h1>
       <p class="tag big">Firm on the Law. Fair to the People.</p>
       
@@ -4034,7 +4060,7 @@ body{background:#fff}
       </div>
       <div class="famserve">
         <p class="kick">Beyond the family home</p>
-        <div class="prose two-col"><p>As soon as he earned his law degree, Michael put his accreditation to work, volunteering as a pro bono attorney and notary with our underserved population at the Harry S. Thompson Center and mentoring the next generation as the Mock Trial Coach at Haynes Academy for Advanced Studies in Jefferson Parish.</p><p>In addition to continuing to coach a high school mock trial team, Michael teaches local law students negotiation and advocacy at Tulane University School of Law.</p><p>Michael’s deep commitment to mentoring the next generation extends to our youngest community members as a volunteer sports coach at our local playgrounds. Additionally, Michael has served as a Board Member for the Louisiana Children’s Museum, supporting and advocating for children throughout the area.</p><p>In his role as Metropolitan Crime Commission Board Member, Michael has continued his service to the greater metropolitan area. As a board member of this watchdog organization, Michael supports its mission of exposing public corruption and improving the administration of justice in order to improve the quality of life for the citizens of Louisiana.</p><p>Michael has committed a lifetime of service to the people of Jefferson Parish. For Michael, family, community, and service are not separate from his professional life. They form the foundation of it.</p></div>
+        <div class="prose two-col"><p>As soon as he earned his law degree, Michael put his accreditation to work, volunteering as a pro bono attorney and notary with our underserved population at the Harry S. Thompson Center and mentoring the next generation as the Mock Trial Coach at Haynes Academy for Advanced Studies and Metairie Park Country Day in Jefferson Parish.</p><p>In addition to continuing to coach a high school mock trial team, Michael teaches local law students negotiation and advocacy at Tulane University School of Law.</p><p>Michael’s deep commitment to mentoring the next generation extends to our youngest community members as a volunteer sports coach at our local playgrounds. Additionally, Michael has served as a Board Member for the Louisiana Children’s Museum, supporting and advocating for children throughout the area.</p><p>In his role as Metropolitan Crime Commission Board Member, Michael has continued his service to the greater metropolitan area. As a board member of this watchdog organization, Michael supports its mission of exposing public corruption and improving the administration of justice in order to improve the quality of life for the citizens of Louisiana.</p><p>Michael has committed a lifetime of service to the people of Jefferson Parish. For Michael, family, community, and service are not separate from his professional life. They form the foundation of it.</p></div>
       </div>
       <ul class="affilstrip"><li class="af-col"><span class="af-mark"><svg class="emb" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3 5 7v9c0 6.5 4.7 11.2 11 13 6.3-1.8 11-6.5 11-13V7Z"/><path class="ac" d="M10.5 15.5S12.8 11.8 16 11.8s5.5 3.7 5.5 3.7-2.3 3.7-5.5 3.7-5.5-3.7-5.5-3.7Z"/><circle class="ac" cx="16" cy="15.5" r="1.5"/></svg></span><b>Metropolitan Crime Commission</b><i class="rolechip now">Current Board Member</i></li><li class="af-col"><span class="af-mark"><svg class="emb" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path class="ac" d="M16 3v3"/><path class="ac" d="M16 4h5l-1.4 2L21 8h-5"/><path d="M4 13 16 8l12 5"/><path d="M6 13v13M26 13v13"/><path d="M12 26v-6a4 4 0 0 1 8 0v6"/><path d="M4 28h24"/></svg></span><b>Louisiana Children’s Museum</b><i class="rolechip past">Former Board Member</i></li><li class="af-col"><span class="af-mark"><svg class="emb" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 5v20"/><path d="M8 25h16"/><path class="ac" d="M7 9h18"/><path d="M7 9 3.5 17h7ZM25 9l-3.5 8h7Z"/></svg></span><b>Nancy M Marsiglia Institute of Justice</b><i class="rolechip now">Current Board Member</i></li><li class="af-col"><span class="af-mark"><svg class="emb" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14 16 5l12 9"/><path d="M7 16v11h18V16"/><path class="ac" d="M12 23v-3.5a1.5 1.5 0 0 1 3 0V23M17 23v-3.5a1.5 1.5 0 0 1 3 0V23"/><path class="ac" d="M12 23h8"/></svg></span><b>Project HELP (Homeless Experience Legal Protection)</b><i class="rolechip serve">Volunteer</i></li><li class="af-col"><span class="af-mark"><svg class="emb" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path class="ac" d="M16 5 3 10l13 5 13-5Z"/><path class="ac" d="M25 12.5V18c0 1.9-4 3.5-9 3.5S7 19.9 7 18v-5.5"/><path d="M6 24h20a2 2 0 0 1 2 2v2H8a2 2 0 0 1-2-2Z"/></svg></span><b>Tulane University School of Law</b><i class="rolechip serve">Adjunct Faculty</i></li></ul>
     </div>
@@ -4074,10 +4100,10 @@ body{background:#fff}
           <h3 class="sub">Traffic Hearing Officer + Ad Hoc Justice of the Peace + Court Appointed Mediator</h3>
           <div class="prose"><p>Michael has served as a Traffic Hearing Officer for First Parish Court for the past decade. He has also served as an Ad Hoc Justice of the Peace for the Fifth Justice of the Peace Court in Jefferson Parish, in addition to serving as a court-appointed mediator who conducted 300+ mediations. These roles have provided direct, hands-on experience on the bench, presiding over trials, managing dockets, and handling proceedings efficiently, professionally, and fairly.</p><p>Michael understands that parish court judges must be decisive, even-handed, and prepared every single day.</p></div>
         </div>
-        <aside class="ed-side"><div class="stats stack"><div class="st"><b class="cnum" data-to="25000" data-suffix="" data-group="1">25,000</b><span>docketed matters overseen</span></div><div class="st"><b class="cnum" data-to="300" data-suffix="+" data-group="0">300+</b><span>court-appointed mediations</span><i class="cf" title="Needs client confirmation">confirm</i></div><div class="st"><b class="cnum" data-to="20" data-suffix="+" data-group="0">20+</b><span>years in Louisiana courts</span></div><div class="st"><b class="cnum" data-to="11" data-suffix="" data-group="0">11</b><span>years as Traffic Hearing Officer</span><i class="cf" title="Needs client confirmation">confirm</i></div></div></aside>
+        <aside class="ed-side"><div class="stats stack"><div class="st"><b class="cnum" data-to="25000" data-suffix="" data-group="1">25,000</b><span>docketed traffic matters overseen</span></div><div class="st"><b class="cnum" data-to="300" data-suffix="+" data-group="0">300+</b><span>court-appointed mediations</span></div><div class="st"><b class="cnum" data-to="20" data-suffix="+" data-group="0">20+</b><span>years in Louisiana courts</span></div><div class="st"><b class="cnum" data-to="11" data-suffix="" data-group="0">11</b><span>years as Traffic Hearing Officer</span></div></div></aside>
       </div>
       <h3 class="sub ledgerhead">Judicial Experience</h3>
-      <div class="benchledger"><div class="blead"><p>Appointed by the Louisiana Supreme Court to sit as Judge Pro Tempore in First Parish Court</p></div><div class="ecard blrow"><p>11 Years As Traffic Hearing Officer in First Parish Court Who Oversaw 25,000 Docketed Matters<i class="cf" title="Needs client confirmation">confirm</i></p></div><div class="ecard blrow"><p>Ad Hoc Justice of the Peace for the Fifth Justice of the Peace</p></div><div class="ecard blrow"><p>Court appointed mediator by numerous Louisiana District Courts</p></div><div class="ecard blrow"><p>Court Appointed Curatorships in the 24th Judicial District Court for the Parish of Jefferson</p></div></div>
+      <div class="benchledger"><div class="blead"><p>Appointed by the Louisiana Supreme Court to sit as Judge Pro Tempore in First Parish Court</p></div><div class="ecard blrow"><p>11 Years As Traffic Hearing Officer in First Parish Court Who Oversaw 25,000 Docketed Matters</p></div><div class="ecard blrow"><p>Ad Hoc Justice of the Peace for the Fifth Justice of the Peace</p></div><div class="ecard blrow"><p>Court appointed mediator by numerous Louisiana District Courts</p></div><div class="ecard blrow"><p>Court Appointed Curatorships in the 24th Judicial District Court for the Parish of Jefferson</p></div></div>
     </div>
   </section>
 
@@ -4137,22 +4163,21 @@ body{background:#fff}
   <div class="ftin">
     <div class="ftcol">
       <div class="ftlogo"><img data-img="logolight" alt="Marsiglia for Judge" class="blogo" width="707" height="269"></div>
-      <p class="ftoff">Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
+      <p class="ftoff">Candidate for Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
       <div class="ftsoc"><a href="https://facebook.com/marsigliaforjudge" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg><span class="vh">Facebook</span></a><a href="https://instagram.com/marsigliaforjudge" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.12 1.39C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.39 2.12.66.67 1.33 1.08 2.12 1.39.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.12-1.39.67-.66 1.08-1.33 1.39-2.12.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.39-2.12C21.32 1.35 20.65.94 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32A6.16 6.16 0 0012 5.84zM12 16a4 4 0 110-8 4 4 0 010 8zm7.85-10.4a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg><span class="vh">Instagram</span></a></div>
     </div>
     <div class="ftcol"><h3>Campaign</h3><nav class="ftnav"><a href="/">Home</a><a href="/about">About</a><a href="/court">Court</a><a href="/vision">Vision</a><a href="/news">News</a><a href="/voter-information">Voter Info</a></nav></div>
     <div class="ftcol">
       <h3>Contact</h3>
-      <p class="ftpend">Email <em>pending</em></p>
-      <p class="ftpend">Phone <em>pending</em></p>
-      <p class="ftpend">Mailing address <em>pending</em></p>
-      <p class="ftnote">The campaign publishes none of these today. Shown as gaps, not invented.</p>
+      <p class="ftcon">Email <a href="mailto:info@michaelmarsiglia.com">info@michaelmarsiglia.com</a></p>
+      <p class="ftcon">Phone <a href="tel:+15042333484">(504) 233-3484</a></p>
+      <p class="ftcon addr">Mailing address<br><span>111 Veterans Memorial Blvd., Ste 1720<br>Metairie, LA 70005</span></p>
     </div>
   </div>
   <div class="ftbar"><span>Paid for by The Michael Marsiglia Campaign Committee</span></div>
 </footer>
   <div class="stickybar">
-    <span>Michael Marsiglia &middot; Judge, First Parish Court, Division A</span>
+    <span>Michael Marsiglia &middot; Candidate for Judge, First Parish Court, Division A</span>
     <a class="btn pri" href="https://secure.anedot.com/michael-jay-marsiglia-campaign-committee/donate">DONATE TODAY</a>
   </div>
 </div></div>
@@ -4298,7 +4323,7 @@ body{background:#fff}
     <div class="statband">
      <div class="st"><b>20+</b><span>Years in Louisiana courtrooms</span></div>
      <div class="st"><b>11</b><span>Years as this court's Traffic Hearing Officer</span></div>
-     <div class="st"><b>25,000+</b><span>Docketed matters overseen</span></div>
+     <div class="st"><b>25,000+</b><span>Docketed traffic matters overseen</span></div>
      <div class="st"><b>300+</b><span>Court-appointed mediations</span></div>
     </div>
    </div>
@@ -4325,7 +4350,7 @@ body{background:#fff}
  <div class="ftin">
   <div class="ftcol">
    <div class="ftlogo"><img data-img="logolight" alt="Marsiglia for Judge" class="blogo" loading="lazy" decoding="async"></div>
-   <p class="ftoff">Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
+   <p class="ftoff">Candidate for Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
    <div class="ftsoc">
     <a href="https://facebook.com/marsigliaforjudge" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
     <a href="https://instagram.com/marsigliaforjudge" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.12 1.39C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.39 2.12.66.67 1.33 1.08 2.12 1.39.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.12-1.39.67-.66 1.08-1.33 1.39-2.12.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.39-2.12C21.32 1.35 20.65.94 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32A6.16 6.16 0 0012 5.84zM12 16a4 4 0 110-8 4 4 0 010 8zm7.85-10.4a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg></a>
@@ -4333,10 +4358,9 @@ body{background:#fff}
   </div>
   <div class="ftcol"><h3>Campaign</h3><nav class="ftnav"><a href="/">Home</a><a href="/about-michael-marsiglia">About</a><a href="/first-parish-court-jefferson-parish">Court</a><a href="/judicial-philosophy">Vision</a><a href="/news">News</a><a href="/vote-november-3-2026">Voter Info</a></nav></div>
   <div class="ftcol"><h3>Contact</h3>
-   <p class="ftpend">Email <em>pending</em></p>
-   <p class="ftpend">Phone <em>pending</em></p>
-   <p class="ftpend">Mailing address <em>pending</em></p>
-   <p class="ftnote">The campaign publishes none of these today. Shown as gaps, not invented.</p>
+   <p class="ftcon">Email <a href="mailto:info@michaelmarsiglia.com">info@michaelmarsiglia.com</a></p>
+   <p class="ftcon">Phone <a href="tel:+15042333484">(504) 233-3484</a></p>
+   <p class="ftcon addr">Mailing address<br><span>111 Veterans Memorial Blvd., Ste 1720<br>Metairie, LA 70005</span></p>
   </div>
  </div>
  <div class="ftbar"><span>Paid for by The Michael Marsiglia Campaign Committee</span></div>
@@ -4357,14 +4381,15 @@ body{background:#fff}
   <nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/first-parish-court-jefferson-parish">Court</a><span>/</span><b>Traffic tickets</b></nav>
   <p class="eyebrow">Court explainer</p>
   <h1>Jefferson Parish Traffic Tickets: What Happens Next</h1>
-  <p class="stand">Your case goes to First Parish Court at 924 David Drive. You generally have three options, and ignoring the ticket is the one that reliably makes it worse.</p>
+  <p class="stand">Your case generally goes to First Parish Court at 924 David Drive. You generally have three options, and ignoring the ticket is the one that reliably makes it worse.</p>
  </div>
 </section>
 
 <section class="sect">
  <div class="in">
   <div class="prose lede" style="max-width:92ch"><p>If you received a traffic citation on the East
-  Bank of Jefferson Parish, your case goes to First Parish Court at 924 David Drive in Metairie.
+  Bank of Jefferson Parish, your case generally goes to First Parish Court at 924 David Drive in
+  Metairie.
   You generally have three options, and ignoring the ticket is the one choice that reliably makes
   the problem worse.</p></div>
   <div class="cardgrid three mt">
@@ -4443,9 +4468,7 @@ body{background:#fff}
    
     <div class="statband">
      <div class="st"><b>11</b><span>Years hearing traffic matters here</span></div>
-     <div class="st"><b>25,000+</b><span>Docketed matters overseen</span></div>
-     <div class="st"><b>4</b><span>Things to check on your citation</span></div>
-     <div class="st"><b>3</b><span>Ways to resolve a citation</span></div>
+     <div class="st"><b>25,000+</b><span>Docketed traffic matters overseen</span></div>
     </div>
    </div>
    <aside class="ed-side"><figure class="fig land"><img data-img="desk2" alt="Michael Marsiglia at his desk" loading="lazy" decoding="async">
@@ -4468,7 +4491,7 @@ body{background:#fff}
  <div class="ftin">
   <div class="ftcol">
    <div class="ftlogo"><img data-img="logolight" alt="Marsiglia for Judge" class="blogo" loading="lazy" decoding="async"></div>
-   <p class="ftoff">Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
+   <p class="ftoff">Candidate for Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
    <div class="ftsoc">
     <a href="https://facebook.com/marsigliaforjudge" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
     <a href="https://instagram.com/marsigliaforjudge" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.12 1.39C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.39 2.12.66.67 1.33 1.08 2.12 1.39.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.12-1.39.67-.66 1.08-1.33 1.39-2.12.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.39-2.12C21.32 1.35 20.65.94 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32A6.16 6.16 0 0012 5.84zM12 16a4 4 0 110-8 4 4 0 010 8zm7.85-10.4a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg></a>
@@ -4476,10 +4499,9 @@ body{background:#fff}
   </div>
   <div class="ftcol"><h3>Campaign</h3><nav class="ftnav"><a href="/">Home</a><a href="/about-michael-marsiglia">About</a><a href="/first-parish-court-jefferson-parish">Court</a><a href="/judicial-philosophy">Vision</a><a href="/news">News</a><a href="/vote-november-3-2026">Voter Info</a></nav></div>
   <div class="ftcol"><h3>Contact</h3>
-   <p class="ftpend">Email <em>pending</em></p>
-   <p class="ftpend">Phone <em>pending</em></p>
-   <p class="ftpend">Mailing address <em>pending</em></p>
-   <p class="ftnote">The campaign publishes none of these today. Shown as gaps, not invented.</p>
+   <p class="ftcon">Email <a href="mailto:info@michaelmarsiglia.com">info@michaelmarsiglia.com</a></p>
+   <p class="ftcon">Phone <a href="tel:+15042333484">(504) 233-3484</a></p>
+   <p class="ftcon addr">Mailing address<br><span>111 Veterans Memorial Blvd., Ste 1720<br>Metairie, LA 70005</span></p>
   </div>
  </div>
  <div class="ftbar"><span>Paid for by The Michael Marsiglia Campaign Committee</span></div>
@@ -4596,9 +4618,8 @@ body{background:#fff}
      docket cannot wait while you scroll through two years of text messages.</p>
     </div>
    
-    <div class="statband">
+    <div class="statband three">
      <div class="st"><b>$50,000</b><span>The ceiling on a civil case here</span></div>
-     <div class="st"><b>6</b><span>Steps from filing to hearing</span></div>
      <div class="st"><b>20+</b><span>Years in Louisiana civil litigation</span></div>
      <div class="st"><b>300+</b><span>Court-appointed mediations</span></div>
     </div>
@@ -4607,7 +4628,7 @@ body{background:#fff}
   </div>
  </div>
 </section>
-<section class="ctaband mid"><div class="in"><div class="ctacopy"><p>Most people in this court do not have a lawyer.</p><span class="ctasub">That is the argument for a judge who has already run this docket: eleven years inside First Parish Court, more than 25,000 matters.</span></div><a class="btn pri lg" href="/about-michael-marsiglia">MICHAEL'S RECORD</a></div></section>
+<section class="ctaband mid"><div class="in"><div class="ctacopy"><p>Most people in this court do not have a lawyer.</p><span class="ctasub">That is the argument for a judge who has already run this docket: eleven years inside First Parish Court, more than 25,000 traffic matters.</span></div><a class="btn pri lg" href="/about-michael-marsiglia">MICHAEL'S RECORD</a></div></section>
 
 <section class="sect darksect">
  <div class="in narrow">
@@ -4639,7 +4660,7 @@ body{background:#fff}
  <div class="ftin">
   <div class="ftcol">
    <div class="ftlogo"><img data-img="logolight" alt="Marsiglia for Judge" class="blogo" loading="lazy" decoding="async"></div>
-   <p class="ftoff">Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
+   <p class="ftoff">Candidate for Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
    <div class="ftsoc">
     <a href="https://facebook.com/marsigliaforjudge" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
     <a href="https://instagram.com/marsigliaforjudge" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.12 1.39C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.39 2.12.66.67 1.33 1.08 2.12 1.39.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.12-1.39.67-.66 1.08-1.33 1.39-2.12.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.39-2.12C21.32 1.35 20.65.94 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32A6.16 6.16 0 0012 5.84zM12 16a4 4 0 110-8 4 4 0 010 8zm7.85-10.4a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg></a>
@@ -4647,10 +4668,9 @@ body{background:#fff}
   </div>
   <div class="ftcol"><h3>Campaign</h3><nav class="ftnav"><a href="/">Home</a><a href="/about-michael-marsiglia">About</a><a href="/first-parish-court-jefferson-parish">Court</a><a href="/judicial-philosophy">Vision</a><a href="/news">News</a><a href="/vote-november-3-2026">Voter Info</a></nav></div>
   <div class="ftcol"><h3>Contact</h3>
-   <p class="ftpend">Email <em>pending</em></p>
-   <p class="ftpend">Phone <em>pending</em></p>
-   <p class="ftpend">Mailing address <em>pending</em></p>
-   <p class="ftnote">The campaign publishes none of these today. Shown as gaps, not invented.</p>
+   <p class="ftcon">Email <a href="mailto:info@michaelmarsiglia.com">info@michaelmarsiglia.com</a></p>
+   <p class="ftcon">Phone <a href="tel:+15042333484">(504) 233-3484</a></p>
+   <p class="ftcon addr">Mailing address<br><span>111 Veterans Memorial Blvd., Ste 1720<br>Metairie, LA 70005</span></p>
   </div>
  </div>
  <div class="ftbar"><span>Paid for by The Michael Marsiglia Campaign Committee</span></div>
@@ -4698,8 +4718,7 @@ body{background:#fff}
   any other judge in their lives. Many of them will not have a lawyer. For them, this court
   <em>is</em> the justice system.</p></div>
    
-    <div class="statband">
-     <div class="st"><b>4</b><span>Kinds of case heard here</span></div>
+    <div class="statband three">
      <div class="st"><b>$50,000</b><span>The civil ceiling</span></div>
      <div class="st"><b>25,000+</b><span>Matters Michael has heard here</span></div>
      <div class="st"><b>Nov 3</b><span>The 2026 open primary</span></div>
@@ -4787,7 +4806,7 @@ body{background:#fff}
  <div class="ftin">
   <div class="ftcol">
    <div class="ftlogo"><img data-img="logolight" alt="Marsiglia for Judge" class="blogo" loading="lazy" decoding="async"></div>
-   <p class="ftoff">Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
+   <p class="ftoff">Candidate for Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
    <div class="ftsoc">
     <a href="https://facebook.com/marsigliaforjudge" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
     <a href="https://instagram.com/marsigliaforjudge" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.12 1.39C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.39 2.12.66.67 1.33 1.08 2.12 1.39.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.12-1.39.67-.66 1.08-1.33 1.39-2.12.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.39-2.12C21.32 1.35 20.65.94 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32A6.16 6.16 0 0012 5.84zM12 16a4 4 0 110-8 4 4 0 010 8zm7.85-10.4a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg></a>
@@ -4795,10 +4814,9 @@ body{background:#fff}
   </div>
   <div class="ftcol"><h3>Campaign</h3><nav class="ftnav"><a href="/">Home</a><a href="/about-michael-marsiglia">About</a><a href="/first-parish-court-jefferson-parish">Court</a><a href="/judicial-philosophy">Vision</a><a href="/news">News</a><a href="/vote-november-3-2026">Voter Info</a></nav></div>
   <div class="ftcol"><h3>Contact</h3>
-   <p class="ftpend">Email <em>pending</em></p>
-   <p class="ftpend">Phone <em>pending</em></p>
-   <p class="ftpend">Mailing address <em>pending</em></p>
-   <p class="ftnote">The campaign publishes none of these today. Shown as gaps, not invented.</p>
+   <p class="ftcon">Email <a href="mailto:info@michaelmarsiglia.com">info@michaelmarsiglia.com</a></p>
+   <p class="ftcon">Phone <a href="tel:+15042333484">(504) 233-3484</a></p>
+   <p class="ftcon addr">Mailing address<br><span>111 Veterans Memorial Blvd., Ste 1720<br>Metairie, LA 70005</span></p>
   </div>
  </div>
  <div class="ftbar"><span>Paid for by The Michael Marsiglia Campaign Committee</span></div>
@@ -4838,7 +4856,7 @@ body{background:#fff}
   <h2>Why the river decides which courthouse you go to</h2>
   <p class="lead">Jefferson Parish is split by the Mississippi River, and its parish courts are
   split the same way. Two courts, same jurisdiction, different sides.</p>
-  <div class="twrap"><table class="ptab compare"><thead><tr><th></th><th>First Parish Court</th><th>Second Parish Court</th></tr></thead><tbody><tr><td>Serves</td><td>East Bank</td><td>West Bank</td></tr><tr><td>Communities</td><td>Metairie, Kenner, Harahan, River Ridge, Jefferson, Elmwood</td><td>Gretna, Marrero, Harvey, Westwego, Terrytown, Avondale, Waggaman</td></tr><tr><td>Location</td><td>924 David Drive, Metairie</td><td>West Bank</td></tr><tr><td>Civil limit</td><td>$50,000</td><td>$50,000</td></tr><tr><td>Also hears</td><td>Misdemeanours, DWI 1st and 2nd, traffic</td><td>Misdemeanours, DWI 1st and 2nd, traffic</td></tr></tbody></table></div>
+  <div class="twrap"><table class="ptab compare"><thead><tr><th></th><th>First Parish Court</th><th>Second Parish Court</th></tr></thead><tbody><tr><td>Serves</td><td>East Bank</td><td>West Bank</td></tr><tr><td>Communities</td><td>Metairie, Kenner, Harahan, River Ridge, Jefferson, Elmwood</td><td>Gretna, Marrero, Harvey, Westwego, Terrytown, Avondale, Waggaman</td></tr><tr><td>Location</td><td>924 David Drive, Metairie</td><td>100 Huey P. Long Ave, Gretna</td></tr><tr><td>Civil limit</td><td>$50,000</td><td>$50,000</td></tr><tr><td>Also hears</td><td>Misdemeanours, DWI 1st and 2nd, traffic</td><td>Misdemeanours, DWI 1st and 2nd, traffic</td></tr></tbody></table></div>
   <div class="prose mt"><p>The practical consequence: a traffic ticket issued in Metairie and one
   issued in Marrero go to different courthouses, before different judges, elected by different
   voters. The address on your citation or your lawsuit tells you which one is yours.</p></div>
@@ -4934,7 +4952,7 @@ body{background:#fff}
  <div class="ftin">
   <div class="ftcol">
    <div class="ftlogo"><img data-img="logolight" alt="Marsiglia for Judge" class="blogo" loading="lazy" decoding="async"></div>
-   <p class="ftoff">Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
+   <p class="ftoff">Candidate for Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
    <div class="ftsoc">
     <a href="https://facebook.com/marsigliaforjudge" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
     <a href="https://instagram.com/marsigliaforjudge" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.12 1.39C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.39 2.12.66.67 1.33 1.08 2.12 1.39.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.12-1.39.67-.66 1.08-1.33 1.39-2.12.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.39-2.12C21.32 1.35 20.65.94 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32A6.16 6.16 0 0012 5.84zM12 16a4 4 0 110-8 4 4 0 010 8zm7.85-10.4a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg></a>
@@ -4942,10 +4960,9 @@ body{background:#fff}
   </div>
   <div class="ftcol"><h3>Campaign</h3><nav class="ftnav"><a href="/">Home</a><a href="/about-michael-marsiglia">About</a><a href="/first-parish-court-jefferson-parish">Court</a><a href="/judicial-philosophy">Vision</a><a href="/news">News</a><a href="/vote-november-3-2026">Voter Info</a></nav></div>
   <div class="ftcol"><h3>Contact</h3>
-   <p class="ftpend">Email <em>pending</em></p>
-   <p class="ftpend">Phone <em>pending</em></p>
-   <p class="ftpend">Mailing address <em>pending</em></p>
-   <p class="ftnote">The campaign publishes none of these today. Shown as gaps, not invented.</p>
+   <p class="ftcon">Email <a href="mailto:info@michaelmarsiglia.com">info@michaelmarsiglia.com</a></p>
+   <p class="ftcon">Phone <a href="tel:+15042333484">(504) 233-3484</a></p>
+   <p class="ftcon addr">Mailing address<br><span>111 Veterans Memorial Blvd., Ste 1720<br>Metairie, LA 70005</span></p>
   </div>
  </div>
  <div class="ftbar"><span>Paid for by The Michael Marsiglia Campaign Committee</span></div>
@@ -5006,7 +5023,7 @@ body{background:#fff}
  <div class="in">
   <p class="kick">At a glance</p>
   <h2>The record in brief</h2>
-  <div class="twrap"><table class="ptab glance"><thead><tr><th></th><th></th></tr></thead><tbody><tr><td>Running for</td><td>Judge, First Parish Court, Division A, Jefferson Parish, Louisiana</td></tr><tr><td>Election</td><td>Tuesday, November 3, 2026</td></tr><tr><td>Years in practice</td><td>20+</td></tr><tr><td>Judicial service</td><td>Appointed Judge Pro Tempore, First Parish Court, by the Louisiana Supreme Court; Ad Hoc Justice of the Peace, Fifth Justice of the Peace Court</td></tr><tr><td>Traffic Hearing Officer</td><td>11 years, First Parish Court, 25,000+ docketed matters</td></tr><tr><td>Mediations</td><td>300+ as court-appointed mediator</td></tr><tr><td>Teaching</td><td>Adjunct faculty, Tulane University School of Law. Mock trial coach, Metairie Park Country Day; formerly Haynes Academy for Advanced Studies</td></tr><tr><td>Law school</td><td><span class="pend">Pending confirmation</span> <span class="cf" title="The source doc lists Loyola University New Orleans College of Law, but its own Confirm-Before-Publish block says law school is absent from the live site and must be supplied by the candidate. Canon 7A(9) bars a false statement about a candidate's own qualifications, so it is not asserted here.">confirm</span></td></tr><tr><td>Admitted to the Louisiana bar</td><td><span class="pend">Pending confirmation</span> <span class="cf" title="The source doc lists 2006, but flags year of bar admission as missing and needing to be supplied. Not asserted here until the candidate confirms.">confirm</span></td></tr><tr><td>Family</td><td>Married to Jennifer for 20 years; three sons; three adopted dogs</td></tr></tbody></table></div>
+  <div class="twrap"><table class="ptab glance"><thead><tr><th></th><th></th></tr></thead><tbody><tr><td>Running for</td><td>Judge, First Parish Court, Division A, Jefferson Parish, Louisiana</td></tr><tr><td>Election</td><td>Tuesday, November 3, 2026</td></tr><tr><td>Years in practice</td><td>20+</td></tr><tr><td>Judicial service</td><td>Appointed Judge Pro Tempore, First Parish Court, by the Louisiana Supreme Court; Ad Hoc Justice of the Peace, Fifth Justice of the Peace Court</td></tr><tr><td>Traffic Hearing Officer</td><td>11 years, First Parish Court, 25,000+ docketed matters</td></tr><tr><td>Mediations</td><td>300+ as court-appointed mediator</td></tr><tr><td>Teaching</td><td>Adjunct faculty, Tulane University School of Law. Mock trial coach, Haynes Academy for Advanced Studies and Metairie Park Country Day</td></tr><tr><td>Law school</td><td>Loyola University of New Orleans School of Law</td></tr><tr><td>Admitted to the Louisiana bar</td><td>2006</td></tr><tr><td>Family</td><td>Married to Jennifer for 20 years; three sons; three adopted dogs</td></tr></tbody></table></div>
  </div>
 </section>
 
@@ -5132,7 +5149,7 @@ body{background:#fff}
  <div class="ftin">
   <div class="ftcol">
    <div class="ftlogo"><img data-img="logolight" alt="Marsiglia for Judge" class="blogo" loading="lazy" decoding="async"></div>
-   <p class="ftoff">Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
+   <p class="ftoff">Candidate for Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
    <div class="ftsoc">
     <a href="https://facebook.com/marsigliaforjudge" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
     <a href="https://instagram.com/marsigliaforjudge" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.12 1.39C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.39 2.12.66.67 1.33 1.08 2.12 1.39.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.12-1.39.67-.66 1.08-1.33 1.39-2.12.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.39-2.12C21.32 1.35 20.65.94 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32A6.16 6.16 0 0012 5.84zM12 16a4 4 0 110-8 4 4 0 010 8zm7.85-10.4a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg></a>
@@ -5140,10 +5157,9 @@ body{background:#fff}
   </div>
   <div class="ftcol"><h3>Campaign</h3><nav class="ftnav"><a href="/">Home</a><a href="/about-michael-marsiglia">About</a><a href="/first-parish-court-jefferson-parish">Court</a><a href="/judicial-philosophy">Vision</a><a href="/news">News</a><a href="/vote-november-3-2026">Voter Info</a></nav></div>
   <div class="ftcol"><h3>Contact</h3>
-   <p class="ftpend">Email <em>pending</em></p>
-   <p class="ftpend">Phone <em>pending</em></p>
-   <p class="ftpend">Mailing address <em>pending</em></p>
-   <p class="ftnote">The campaign publishes none of these today. Shown as gaps, not invented.</p>
+   <p class="ftcon">Email <a href="mailto:info@michaelmarsiglia.com">info@michaelmarsiglia.com</a></p>
+   <p class="ftcon">Phone <a href="tel:+15042333484">(504) 233-3484</a></p>
+   <p class="ftcon addr">Mailing address<br><span>111 Veterans Memorial Blvd., Ste 1720<br>Metairie, LA 70005</span></p>
   </div>
  </div>
  <div class="ftbar"><span>Paid for by The Michael Marsiglia Campaign Committee</span></div>
@@ -5320,7 +5336,7 @@ body{background:#fff}
  <div class="ftin">
   <div class="ftcol">
    <div class="ftlogo"><img data-img="logolight" alt="Marsiglia for Judge" class="blogo" loading="lazy" decoding="async"></div>
-   <p class="ftoff">Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
+   <p class="ftoff">Candidate for Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
    <div class="ftsoc">
     <a href="https://facebook.com/marsigliaforjudge" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
     <a href="https://instagram.com/marsigliaforjudge" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.12 1.39C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.39 2.12.66.67 1.33 1.08 2.12 1.39.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.12-1.39.67-.66 1.08-1.33 1.39-2.12.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.39-2.12C21.32 1.35 20.65.94 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32A6.16 6.16 0 0012 5.84zM12 16a4 4 0 110-8 4 4 0 010 8zm7.85-10.4a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg></a>
@@ -5328,10 +5344,9 @@ body{background:#fff}
   </div>
   <div class="ftcol"><h3>Campaign</h3><nav class="ftnav"><a href="/">Home</a><a href="/about-michael-marsiglia">About</a><a href="/first-parish-court-jefferson-parish">Court</a><a href="/judicial-philosophy">Vision</a><a href="/news">News</a><a href="/vote-november-3-2026">Voter Info</a></nav></div>
   <div class="ftcol"><h3>Contact</h3>
-   <p class="ftpend">Email <em>pending</em></p>
-   <p class="ftpend">Phone <em>pending</em></p>
-   <p class="ftpend">Mailing address <em>pending</em></p>
-   <p class="ftnote">The campaign publishes none of these today. Shown as gaps, not invented.</p>
+   <p class="ftcon">Email <a href="mailto:info@michaelmarsiglia.com">info@michaelmarsiglia.com</a></p>
+   <p class="ftcon">Phone <a href="tel:+15042333484">(504) 233-3484</a></p>
+   <p class="ftcon addr">Mailing address<br><span>111 Veterans Memorial Blvd., Ste 1720<br>Metairie, LA 70005</span></p>
   </div>
  </div>
  <div class="ftbar"><span>Paid for by The Michael Marsiglia Campaign Committee</span></div>
@@ -5453,7 +5468,7 @@ body{background:#fff}
  <div class="ftin">
   <div class="ftcol">
    <div class="ftlogo"><img data-img="logolight" alt="Marsiglia for Judge" class="blogo" loading="lazy" decoding="async"></div>
-   <p class="ftoff">Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
+   <p class="ftoff">Candidate for Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
    <div class="ftsoc">
     <a href="https://facebook.com/marsigliaforjudge" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
     <a href="https://instagram.com/marsigliaforjudge" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.12 1.39C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.39 2.12.66.67 1.33 1.08 2.12 1.39.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.12-1.39.67-.66 1.08-1.33 1.39-2.12.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.39-2.12C21.32 1.35 20.65.94 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32A6.16 6.16 0 0012 5.84zM12 16a4 4 0 110-8 4 4 0 010 8zm7.85-10.4a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg></a>
@@ -5461,10 +5476,9 @@ body{background:#fff}
   </div>
   <div class="ftcol"><h3>Campaign</h3><nav class="ftnav"><a href="/">Home</a><a href="/about-michael-marsiglia">About</a><a href="/first-parish-court-jefferson-parish">Court</a><a href="/judicial-philosophy">Vision</a><a href="/news">News</a><a href="/vote-november-3-2026">Voter Info</a></nav></div>
   <div class="ftcol"><h3>Contact</h3>
-   <p class="ftpend">Email <em>pending</em></p>
-   <p class="ftpend">Phone <em>pending</em></p>
-   <p class="ftpend">Mailing address <em>pending</em></p>
-   <p class="ftnote">The campaign publishes none of these today. Shown as gaps, not invented.</p>
+   <p class="ftcon">Email <a href="mailto:info@michaelmarsiglia.com">info@michaelmarsiglia.com</a></p>
+   <p class="ftcon">Phone <a href="tel:+15042333484">(504) 233-3484</a></p>
+   <p class="ftcon addr">Mailing address<br><span>111 Veterans Memorial Blvd., Ste 1720<br>Metairie, LA 70005</span></p>
   </div>
  </div>
  <div class="ftbar"><span>Paid for by The Michael Marsiglia Campaign Committee</span></div>
@@ -5599,7 +5613,7 @@ body{background:#fff}
  <div class="ftin">
   <div class="ftcol">
    <div class="ftlogo"><img data-img="logolight" alt="Marsiglia for Judge" class="blogo" loading="lazy" decoding="async"></div>
-   <p class="ftoff">Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
+   <p class="ftoff">Candidate for Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
    <div class="ftsoc">
     <a href="https://facebook.com/marsigliaforjudge" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
     <a href="https://instagram.com/marsigliaforjudge" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.12 1.39C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.39 2.12.66.67 1.33 1.08 2.12 1.39.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.12-1.39.67-.66 1.08-1.33 1.39-2.12.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.39-2.12C21.32 1.35 20.65.94 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32A6.16 6.16 0 0012 5.84zM12 16a4 4 0 110-8 4 4 0 010 8zm7.85-10.4a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg></a>
@@ -5607,10 +5621,9 @@ body{background:#fff}
   </div>
   <div class="ftcol"><h3>Campaign</h3><nav class="ftnav"><a href="/">Home</a><a href="/about-michael-marsiglia">About</a><a href="/first-parish-court-jefferson-parish">Court</a><a href="/judicial-philosophy">Vision</a><a href="/news">News</a><a href="/vote-november-3-2026">Voter Info</a></nav></div>
   <div class="ftcol"><h3>Contact</h3>
-   <p class="ftpend">Email <em>pending</em></p>
-   <p class="ftpend">Phone <em>pending</em></p>
-   <p class="ftpend">Mailing address <em>pending</em></p>
-   <p class="ftnote">The campaign publishes none of these today. Shown as gaps, not invented.</p>
+   <p class="ftcon">Email <a href="mailto:info@michaelmarsiglia.com">info@michaelmarsiglia.com</a></p>
+   <p class="ftcon">Phone <a href="tel:+15042333484">(504) 233-3484</a></p>
+   <p class="ftcon addr">Mailing address<br><span>111 Veterans Memorial Blvd., Ste 1720<br>Metairie, LA 70005</span></p>
   </div>
  </div>
  <div class="ftbar"><span>Paid for by The Michael Marsiglia Campaign Committee</span></div>
@@ -5746,7 +5759,7 @@ body{background:#fff}
  <div class="ftin">
   <div class="ftcol">
    <div class="ftlogo"><img data-img="logolight" alt="Marsiglia for Judge" class="blogo" loading="lazy" decoding="async"></div>
-   <p class="ftoff">Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
+   <p class="ftoff">Candidate for Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
    <div class="ftsoc">
     <a href="https://facebook.com/marsigliaforjudge" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
     <a href="https://instagram.com/marsigliaforjudge" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.12 1.39C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.39 2.12.66.67 1.33 1.08 2.12 1.39.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.12-1.39.67-.66 1.08-1.33 1.39-2.12.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.39-2.12C21.32 1.35 20.65.94 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32A6.16 6.16 0 0012 5.84zM12 16a4 4 0 110-8 4 4 0 010 8zm7.85-10.4a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg></a>
@@ -5754,10 +5767,9 @@ body{background:#fff}
   </div>
   <div class="ftcol"><h3>Campaign</h3><nav class="ftnav"><a href="/">Home</a><a href="/about-michael-marsiglia">About</a><a href="/first-parish-court-jefferson-parish">Court</a><a href="/judicial-philosophy">Vision</a><a href="/news">News</a><a href="/vote-november-3-2026">Voter Info</a></nav></div>
   <div class="ftcol"><h3>Contact</h3>
-   <p class="ftpend">Email <em>pending</em></p>
-   <p class="ftpend">Phone <em>pending</em></p>
-   <p class="ftpend">Mailing address <em>pending</em></p>
-   <p class="ftnote">The campaign publishes none of these today. Shown as gaps, not invented.</p>
+   <p class="ftcon">Email <a href="mailto:info@michaelmarsiglia.com">info@michaelmarsiglia.com</a></p>
+   <p class="ftcon">Phone <a href="tel:+15042333484">(504) 233-3484</a></p>
+   <p class="ftcon addr">Mailing address<br><span>111 Veterans Memorial Blvd., Ste 1720<br>Metairie, LA 70005</span></p>
   </div>
  </div>
  <div class="ftbar"><span>Paid for by The Michael Marsiglia Campaign Committee</span></div>
@@ -5795,7 +5807,7 @@ body{background:#fff}
  <div class="ftin">
   <div class="ftcol">
    <div class="ftlogo"><img data-img="logolight" alt="Marsiglia for Judge" class="blogo" loading="lazy" decoding="async"></div>
-   <p class="ftoff">Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
+   <p class="ftoff">Candidate for Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
    <div class="ftsoc">
     <a href="https://facebook.com/marsigliaforjudge" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
     <a href="https://instagram.com/marsigliaforjudge" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.12 1.39C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.39 2.12.66.67 1.33 1.08 2.12 1.39.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.12-1.39.67-.66 1.08-1.33 1.39-2.12.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.39-2.12C21.32 1.35 20.65.94 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32A6.16 6.16 0 0012 5.84zM12 16a4 4 0 110-8 4 4 0 010 8zm7.85-10.4a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg></a>
@@ -5803,10 +5815,9 @@ body{background:#fff}
   </div>
   <div class="ftcol"><h3>Campaign</h3><nav class="ftnav"><a href="/">Home</a><a href="/about-michael-marsiglia">About</a><a href="/first-parish-court-jefferson-parish">Court</a><a href="/judicial-philosophy">Vision</a><a href="/news">News</a><a href="/vote-november-3-2026">Voter Info</a></nav></div>
   <div class="ftcol"><h3>Contact</h3>
-   <p class="ftpend">Email <em>pending</em></p>
-   <p class="ftpend">Phone <em>pending</em></p>
-   <p class="ftpend">Mailing address <em>pending</em></p>
-   <p class="ftnote">The campaign publishes none of these today. Shown as gaps, not invented.</p>
+   <p class="ftcon">Email <a href="mailto:info@michaelmarsiglia.com">info@michaelmarsiglia.com</a></p>
+   <p class="ftcon">Phone <a href="tel:+15042333484">(504) 233-3484</a></p>
+   <p class="ftcon addr">Mailing address<br><span>111 Veterans Memorial Blvd., Ste 1720<br>Metairie, LA 70005</span></p>
   </div>
  </div>
  <div class="ftbar"><span>Paid for by The Michael Marsiglia Campaign Committee</span></div>
@@ -5888,7 +5899,7 @@ body{background:#fff}
  <div class="ftin">
   <div class="ftcol">
    <div class="ftlogo"><img data-img="logolight" alt="Marsiglia for Judge" class="blogo" loading="lazy" decoding="async"></div>
-   <p class="ftoff">Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
+   <p class="ftoff">Candidate for Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
    <div class="ftsoc">
     <a href="https://facebook.com/marsigliaforjudge" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
     <a href="https://instagram.com/marsigliaforjudge" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.12 1.39C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.39 2.12.66.67 1.33 1.08 2.12 1.39.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.12-1.39.67-.66 1.08-1.33 1.39-2.12.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.39-2.12C21.32 1.35 20.65.94 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32A6.16 6.16 0 0012 5.84zM12 16a4 4 0 110-8 4 4 0 010 8zm7.85-10.4a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg></a>
@@ -5896,10 +5907,9 @@ body{background:#fff}
   </div>
   <div class="ftcol"><h3>Campaign</h3><nav class="ftnav"><a href="/">Home</a><a href="/about-michael-marsiglia">About</a><a href="/first-parish-court-jefferson-parish">Court</a><a href="/judicial-philosophy">Vision</a><a href="/news">News</a><a href="/vote-november-3-2026">Voter Info</a></nav></div>
   <div class="ftcol"><h3>Contact</h3>
-   <p class="ftpend">Email <em>pending</em></p>
-   <p class="ftpend">Phone <em>pending</em></p>
-   <p class="ftpend">Mailing address <em>pending</em></p>
-   <p class="ftnote">The campaign publishes none of these today. Shown as gaps, not invented.</p>
+   <p class="ftcon">Email <a href="mailto:info@michaelmarsiglia.com">info@michaelmarsiglia.com</a></p>
+   <p class="ftcon">Phone <a href="tel:+15042333484">(504) 233-3484</a></p>
+   <p class="ftcon addr">Mailing address<br><span>111 Veterans Memorial Blvd., Ste 1720<br>Metairie, LA 70005</span></p>
   </div>
  </div>
  <div class="ftbar"><span>Paid for by The Michael Marsiglia Campaign Committee</span></div>
@@ -5970,7 +5980,7 @@ body{background:#fff}
  <div class="ftin">
   <div class="ftcol">
    <div class="ftlogo"><img data-img="logolight" alt="Marsiglia for Judge" class="blogo" loading="lazy" decoding="async"></div>
-   <p class="ftoff">Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
+   <p class="ftoff">Candidate for Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
    <div class="ftsoc">
     <a href="https://facebook.com/marsigliaforjudge" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
     <a href="https://instagram.com/marsigliaforjudge" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.12 1.39C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.39 2.12.66.67 1.33 1.08 2.12 1.39.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.12-1.39.67-.66 1.08-1.33 1.39-2.12.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.39-2.12C21.32 1.35 20.65.94 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32A6.16 6.16 0 0012 5.84zM12 16a4 4 0 110-8 4 4 0 010 8zm7.85-10.4a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg></a>
@@ -5978,10 +5988,9 @@ body{background:#fff}
   </div>
   <div class="ftcol"><h3>Campaign</h3><nav class="ftnav"><a href="/">Home</a><a href="/about-michael-marsiglia">About</a><a href="/first-parish-court-jefferson-parish">Court</a><a href="/judicial-philosophy">Vision</a><a href="/news">News</a><a href="/vote-november-3-2026">Voter Info</a></nav></div>
   <div class="ftcol"><h3>Contact</h3>
-   <p class="ftpend">Email <em>pending</em></p>
-   <p class="ftpend">Phone <em>pending</em></p>
-   <p class="ftpend">Mailing address <em>pending</em></p>
-   <p class="ftnote">The campaign publishes none of these today. Shown as gaps, not invented.</p>
+   <p class="ftcon">Email <a href="mailto:info@michaelmarsiglia.com">info@michaelmarsiglia.com</a></p>
+   <p class="ftcon">Phone <a href="tel:+15042333484">(504) 233-3484</a></p>
+   <p class="ftcon addr">Mailing address<br><span>111 Veterans Memorial Blvd., Ste 1720<br>Metairie, LA 70005</span></p>
   </div>
  </div>
  <div class="ftbar"><span>Paid for by The Michael Marsiglia Campaign Committee</span></div>
@@ -6013,7 +6022,7 @@ body{background:#fff}
 <section class="sect">
  <div class="in read">
   <h2>Where he trained</h2>
-  <div class="prose"><p>Michael earned his law degree at Loyola University New Orleans College of Law in 2005 <span class="cf" title="The About page withholds law school as Pending confirmation: the source doc flags it as absent from the live site, and Canon 7A(9) bars a false statement about a candidate's own qualifications. Confirm with the candidate before publishing.">confirm</span>, after a business degree at the University of Denver in 2002. He has been a member of Berrigan Litchfield, LLC, since 2006 <span class="cf" title="The About page marks year of bar admission as Pending confirmation for the same reason. Confirm the 2006 date with the candidate before publishing.">confirm</span>.</p><p>He is admitted to practice in Louisiana, before the federal courts for the Eastern, Middle, and Western Districts of Louisiana, and before the United States Court of Appeals for the Fifth Circuit.</p><p>Breadth matters more than it sounds. Michael&rsquo;s work has never been confined to one courthouse, one bench, or one kind of case.</p></div>
+  <div class="prose"><p>Michael earned his law degree at Loyola University New Orleans College of Law in 2005, after a business degree at the University of Denver in 2002. He has been a member of Berrigan Litchfield, LLC, since 2006.</p><p>He is admitted to practice in Louisiana, before the federal courts for the Eastern, Middle, and Western Districts of Louisiana, and before the United States Court of Appeals for the Fifth Circuit.</p><p>Breadth matters more than it sounds. Michael&rsquo;s work has never been confined to one courthouse, one bench, or one kind of case.</p></div>
  </div>
 </section>
 <section class="sect band">
@@ -6043,7 +6052,7 @@ body{background:#fff}
 <section class="sect band">
  <div class="in read">
   <h2>Teaching it</h2>
-  <div class="prose"><p>Michael teaches negotiation and advocacy to law students as adjunct faculty at Tulane University School of Law and coaches the mock trial team at Haynes Academy for Advanced Studies <span class="cf" title="The About page says he currently coaches at Metairie Park Country Day and formerly at Haynes Academy. One of the two is out of date. Confirm before publishing.">confirm</span>, a Jefferson Parish public school.</p><p>Law students and teenagers both ask why, and neither accepts the professional version of the answer. Explaining the law to someone who will not let you hide behind vocabulary is useful practice for a courtroom where the person in front of you may have no lawyer at all.</p></div>
+  <div class="prose"><p>Michael teaches negotiation and advocacy to law students as adjunct faculty at Tulane University School of Law and coaches the mock trial team at Haynes Academy for Advanced Studies, a Jefferson Parish public school.</p><p>Law students and teenagers both ask why, and neither accepts the professional version of the answer. Explaining the law to someone who will not let you hide behind vocabulary is useful practice for a courtroom where the person in front of you may have no lawyer at all.</p></div>
  </div>
 </section>
 <section class="sect">
@@ -6075,7 +6084,7 @@ body{background:#fff}
  <div class="ftin">
   <div class="ftcol">
    <div class="ftlogo"><img data-img="logolight" alt="Marsiglia for Judge" class="blogo" loading="lazy" decoding="async"></div>
-   <p class="ftoff">Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
+   <p class="ftoff">Candidate for Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
    <div class="ftsoc">
     <a href="https://facebook.com/marsigliaforjudge" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
     <a href="https://instagram.com/marsigliaforjudge" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.12 1.39C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.39 2.12.66.67 1.33 1.08 2.12 1.39.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.12-1.39.67-.66 1.08-1.33 1.39-2.12.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.39-2.12C21.32 1.35 20.65.94 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32A6.16 6.16 0 0012 5.84zM12 16a4 4 0 110-8 4 4 0 010 8zm7.85-10.4a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg></a>
@@ -6083,10 +6092,9 @@ body{background:#fff}
   </div>
   <div class="ftcol"><h3>Campaign</h3><nav class="ftnav"><a href="/">Home</a><a href="/about-michael-marsiglia">About</a><a href="/first-parish-court-jefferson-parish">Court</a><a href="/judicial-philosophy">Vision</a><a href="/news">News</a><a href="/vote-november-3-2026">Voter Info</a></nav></div>
   <div class="ftcol"><h3>Contact</h3>
-   <p class="ftpend">Email <em>pending</em></p>
-   <p class="ftpend">Phone <em>pending</em></p>
-   <p class="ftpend">Mailing address <em>pending</em></p>
-   <p class="ftnote">The campaign publishes none of these today. Shown as gaps, not invented.</p>
+   <p class="ftcon">Email <a href="mailto:info@michaelmarsiglia.com">info@michaelmarsiglia.com</a></p>
+   <p class="ftcon">Phone <a href="tel:+15042333484">(504) 233-3484</a></p>
+   <p class="ftcon addr">Mailing address<br><span>111 Veterans Memorial Blvd., Ste 1720<br>Metairie, LA 70005</span></p>
   </div>
  </div>
  <div class="ftbar"><span>Paid for by The Michael Marsiglia Campaign Committee</span></div>
@@ -6192,7 +6200,7 @@ body{background:#fff}
  <div class="ftin">
   <div class="ftcol">
    <div class="ftlogo"><img data-img="logolight" alt="Marsiglia for Judge" class="blogo" loading="lazy" decoding="async"></div>
-   <p class="ftoff">Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
+   <p class="ftoff">Candidate for Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
    <div class="ftsoc">
     <a href="https://facebook.com/marsigliaforjudge" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
     <a href="https://instagram.com/marsigliaforjudge" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.12 1.39C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.39 2.12.66.67 1.33 1.08 2.12 1.39.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.12-1.39.67-.66 1.08-1.33 1.39-2.12.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.39-2.12C21.32 1.35 20.65.94 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32A6.16 6.16 0 0012 5.84zM12 16a4 4 0 110-8 4 4 0 010 8zm7.85-10.4a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg></a>
@@ -6200,10 +6208,9 @@ body{background:#fff}
   </div>
   <div class="ftcol"><h3>Campaign</h3><nav class="ftnav"><a href="/">Home</a><a href="/about-michael-marsiglia">About</a><a href="/first-parish-court-jefferson-parish">Court</a><a href="/judicial-philosophy">Vision</a><a href="/news">News</a><a href="/vote-november-3-2026">Voter Info</a></nav></div>
   <div class="ftcol"><h3>Contact</h3>
-   <p class="ftpend">Email <em>pending</em></p>
-   <p class="ftpend">Phone <em>pending</em></p>
-   <p class="ftpend">Mailing address <em>pending</em></p>
-   <p class="ftnote">The campaign publishes none of these today. Shown as gaps, not invented.</p>
+   <p class="ftcon">Email <a href="mailto:info@michaelmarsiglia.com">info@michaelmarsiglia.com</a></p>
+   <p class="ftcon">Phone <a href="tel:+15042333484">(504) 233-3484</a></p>
+   <p class="ftcon addr">Mailing address<br><span>111 Veterans Memorial Blvd., Ste 1720<br>Metairie, LA 70005</span></p>
   </div>
  </div>
  <div class="ftbar"><span>Paid for by The Michael Marsiglia Campaign Committee</span></div>
@@ -6297,7 +6304,7 @@ body{background:#fff}
  <div class="ftin">
   <div class="ftcol">
    <div class="ftlogo"><img data-img="logolight" alt="Marsiglia for Judge" class="blogo" loading="lazy" decoding="async"></div>
-   <p class="ftoff">Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
+   <p class="ftoff">Candidate for Judge, First Parish Court, Division A<br>Jefferson Parish, Louisiana</p>
    <div class="ftsoc">
     <a href="https://facebook.com/marsigliaforjudge" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
     <a href="https://instagram.com/marsigliaforjudge" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.12 1.39C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.39 2.12.66.67 1.33 1.08 2.12 1.39.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.12-1.39.67-.66 1.08-1.33 1.39-2.12.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.39-2.12C21.32 1.35 20.65.94 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32A6.16 6.16 0 0012 5.84zM12 16a4 4 0 110-8 4 4 0 010 8zm7.85-10.4a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg></a>
@@ -6305,10 +6312,9 @@ body{background:#fff}
   </div>
   <div class="ftcol"><h3>Campaign</h3><nav class="ftnav"><a href="/">Home</a><a href="/about-michael-marsiglia">About</a><a href="/first-parish-court-jefferson-parish">Court</a><a href="/judicial-philosophy">Vision</a><a href="/news">News</a><a href="/vote-november-3-2026">Voter Info</a></nav></div>
   <div class="ftcol"><h3>Contact</h3>
-   <p class="ftpend">Email <em>pending</em></p>
-   <p class="ftpend">Phone <em>pending</em></p>
-   <p class="ftpend">Mailing address <em>pending</em></p>
-   <p class="ftnote">The campaign publishes none of these today. Shown as gaps, not invented.</p>
+   <p class="ftcon">Email <a href="mailto:info@michaelmarsiglia.com">info@michaelmarsiglia.com</a></p>
+   <p class="ftcon">Phone <a href="tel:+15042333484">(504) 233-3484</a></p>
+   <p class="ftcon addr">Mailing address<br><span>111 Veterans Memorial Blvd., Ste 1720<br>Metairie, LA 70005</span></p>
   </div>
  </div>
  <div class="ftbar"><span>Paid for by The Michael Marsiglia Campaign Committee</span></div>

@@ -25,8 +25,18 @@ requests are two Google Fonts stylesheets.
 
 Some claims are deliberately marked rather than asserted. An amber **CONFIRM** badge means the
 campaign has not verified that item in writing, and hovering it explains why. Those are open
-questions for the campaign, not oversights. Three of them sit on the Experience page and need the
-candidate: law school, year of bar admission, and which school he currently coaches mock trial at.
+questions for the campaign, not oversights.
+
+The campaign's marked-up revisions of 9 September 2026 answered the three that needed the
+candidate: law school (Loyola University of New Orleans School of Law), year of bar admission
+(2006), and the mock-trial coaching, which now names Haynes Academy for Advanced Studies and
+Metairie Park Country Day on both pages. Those badges are gone and the facts are asserted. The
+badges still on the site are the ones nobody has answered yet: Division A incumbency and term
+length, the traffic payment URL and accepted methods, the current small-claims filing fee, the
+municipality list against the Clerk of Court's district maps, and which voter-ID rule is in force
+on election day.
+
+The footer now carries the campaign's published email, phone and mailing address.
 
 Every date except Election Day is derived from Louisiana's standard statutory intervals rather
 than read off a published 2026 calendar, and is marked accordingly. Confirm any date with the
