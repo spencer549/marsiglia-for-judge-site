@@ -198,7 +198,7 @@ html{-webkit-text-size-adjust:100%}
 
 .site-home .in.center{text-align:center}
 
-.site-home .kick{font-size:12px;letter-spacing:.19em;text-transform:uppercase;color:var(--red-ac);
+.site-home .kick{font-size:15px;letter-spacing:.19em;text-transform:uppercase;color:var(--red-ac);
   font-weight:700;margin:0 0 var(--s1)}
 
 .site-home .lead{font-size:17.5px;color:var(--ink);max-width:70ch}
@@ -497,7 +497,7 @@ html{-webkit-text-size-adjust:100%}
    widths where it still has to wrap: it splits 502/280 instead of orphaning "Judge". */
 .site-home .d-b .hcopy > h1{max-width:800px;text-wrap:balance}
 
-.site-home .d-b .eyebrow{font-size:12px;letter-spacing:.19em;text-transform:uppercase;color:#ffb4bd;
+.site-home .d-b .eyebrow{font-size:15px;letter-spacing:.19em;text-transform:uppercase;color:#ffb4bd;
   font-weight:700;margin:0 0 var(--s2)}
 
 .site-home .d-b h1{font-size:70px;font-weight:500;color:#fff;letter-spacing:-.03em}
@@ -1379,7 +1379,12 @@ html{-webkit-text-size-adjust:100%}
 
   .site-home .d-b .phold{position:static;transform:none;width:100%;max-width:none;aspect-ratio:16/7;margin-top:var(--s3)}
 
-  .site-home .d-b .hero.bleed{min-height:0;padding:118px var(--s3) var(--s5)}
+  .site-home .d-b .hero.bleed{aspect-ratio:auto;min-height:calc(100vw*912/1905);padding:118px var(--s3) var(--s5)}
+
+  /* Second veil layer, mobile only. .hcopy is z-index:2, so this sits over the
+     photograph and the scrim and under the copy. */
+  .site-home .d-b .hero.bleed::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+    background:linear-gradient(180deg,rgba(11,15,42,.34) 0%,rgba(11,15,42,.66) 26%,rgba(11,15,42,.74) 100%)}
 
   .site-home .sect{padding:var(--s6) var(--s3)}
 
@@ -2980,7 +2985,7 @@ html{-webkit-text-size-adjust:100%}
 
 .site-inner .in.center{text-align:center}
 
-.site-inner .kick{font-size:12px;letter-spacing:.19em;text-transform:uppercase;color:var(--red-ac);
+.site-inner .kick{font-size:15px;letter-spacing:.19em;text-transform:uppercase;color:var(--red-ac);
   font-weight:700;margin:0 0 var(--s1)}
 
 .site-inner .lead{font-size:17.5px;color:var(--ink);max-width:70ch}
@@ -3096,7 +3101,7 @@ html{-webkit-text-size-adjust:100%}
 
 .site-inner .pin > *{max-width:56%}
 
-.site-inner .phero .eyebrow{font-size:12px;letter-spacing:.19em;text-transform:uppercase;color:#ffb4bd;
+.site-inner .phero .eyebrow{font-size:15px;letter-spacing:.19em;text-transform:uppercase;color:#ffb4bd;
   font-weight:700;margin:0 0 var(--s2)}
 
 .site-inner .phero h1{font-size:52px;font-weight:500;color:#fff;letter-spacing:-.03em;text-wrap:balance}
@@ -3495,7 +3500,9 @@ html{-webkit-text-size-adjust:100%}
 
 .site-inner .ptab.dates td:first-child{font-weight:600;color:var(--ink)}
 
-.site-inner .ptab.dates td:last-child{white-space:nowrap}
+.site-inner .ptab.dates{min-width:0}
+
+.site-inner .ptab.dates td:last-child{white-space:normal}
 
 
 /* ------------------------------------------------------------ hub cards */
@@ -4231,7 +4238,7 @@ html{-webkit-text-size-adjust:100%}
 
 <section class="sect">
  <div class="in narrow">
-  <div class="faqwrap"><h2>Frequently asked questions</h2><details class="faq"><summary>What is the dollar limit for a civil case in First Parish Court?</summary><div><p>$50,000. Claims above that amount are filed in the 24th Judicial District Court.</p></div></details><details class="faq"><summary>Does First Parish Court handle divorce or custody?</summary><div><p>No. Family law matters in Jefferson Parish are heard in the 24th Judicial District Court.</p></div></details><details class="faq"><summary>Where is First Parish Court located?</summary><div><p>924 David Drive, Metairie, LA 70003. The main number is (504) 364-2900.</p></div></details><details class="faq"><summary>What areas does First Parish Court cover?</summary><div><p>The East Bank of Jefferson Parish, including Metairie, Kenner, Harahan, River Ridge, Jefferson and Elmwood. West Bank matters go to Second Parish Court.</p></div></details><details class="faq"><summary>Do I need a lawyer for First Parish Court?</summary><div><p>You may represent yourself in a civil matter, and many people do. For criminal charges, including DWI, you should speak with an attorney. This page is general information, not legal advice.</p></div></details><details class="faq"><summary>When is the next election for First Parish Court, Division A?</summary><div><p>Tuesday, November 3, 2026. If no candidate receives a majority, a general election follows on Saturday, December 12, 2026.</p></div></details></div>
+  <div class="faqwrap"><h2>Frequently asked questions</h2><details class="faq"><summary>What is the dollar limit for a civil case in First Parish Court?</summary><div><p>$50,000. Claims above that amount are filed in the 24th Judicial District Court.</p></div></details><details class="faq"><summary>Does First Parish Court handle divorce or custody?</summary><div><p>No. Family law matters in Jefferson Parish are heard in the 24th Judicial District Court.</p></div></details><details class="faq"><summary>Where is First Parish Court located?</summary><div><p>924 David Drive, Metairie, LA 70003. The main number is (504) 364-2900.</p></div></details><details class="faq"><summary>What areas does First Parish Court cover?</summary><div><p>The East Bank of Jefferson Parish, including Metairie, Kenner, Harahan, River Ridge, Jefferson and Elmwood. West Bank matters go to Second Parish Court.</p></div></details><details class="faq"><summary>Do I need a lawyer for First Parish Court?</summary><div><p>You may represent yourself in a civil matter, and many people do. For criminal charges, including DWI, you should speak with an attorney. This page is general information, not legal advice.</p></div></details><details class="faq"><summary>When is the next election for First Parish Court, Division A?</summary><div><p>Tuesday, November 3, 2026. Polls are open from 6:00 a.m. to 8:00 p.m.</p></div></details></div>
  </div>
 </section>
 <section class="ctaband"><div class="in"><div class="ctacopy"><p>A judge who already knows this court from the inside.</p><span class="ctasub">Eleven years as First Parish Court's Traffic Hearing Officer, and appointed by the Louisiana Supreme Court to sit there as Judge Pro Tempore.</span></div><a class="btn pri lg" href="/about-michael-marsiglia">ABOUT MICHAEL</a></div></section>
@@ -4640,15 +4647,12 @@ html{-webkit-text-size-adjust:100%}
    </div>
    <aside class="ed-side">
     <h3 class="sub">The election timeline</h3>
-    <div class="twrap"><table class="ptab "><thead><tr><th>Date</th><th>What happens</th></tr></thead><tbody><tr><td>Tuesday, November 3, 2026</td><td>Open primary. Polls open 6:00 a.m. to 8:00 p.m.</td></tr><tr><td>Saturday, December 12, 2026</td><td>General election, if no candidate wins a majority on November 3. Polls open 7:00 a.m. to 8:00 p.m.</td></tr></tbody></table></div>
+    <div class="twrap"><table class="ptab "><thead><tr><th>Date</th><th>What happens</th></tr></thead><tbody><tr><td>Monday, October 5, 2026</td><td>Last day to register in person, by mail or at an OMV office.</td></tr><tr><td>Tuesday, October 13, 2026</td><td>Last day to register online through GeauxVote.</td></tr><tr><td>October 20 to 27, 2026</td><td>Early voting, 8:30 a.m. to 6:00 p.m., closed Sunday, October 25.</td></tr><tr><td>Friday, October 30, 2026</td><td>Last day to request a mail ballot, by 4:30 p.m.</td></tr><tr><td>Tuesday, November 3, 2026</td><td>Election Day. Polls open 6:00 a.m. to 8:00 p.m.</td></tr></tbody></table></div>
     <p class="src">Louisiana uses an open primary for this seat. Every candidate appears on the same
-    November ballot regardless of party, and every registered voter in the district may vote. If a
-    candidate receives more than 50% of the vote, the race is decided in November. If not, the top
-    two advance to December.</p>
+    November ballot regardless of party, and every registered voter in the district may vote.</p>
    </aside>
   </div>
-  <div class="gapbox"><p class="gaplabel">Early voting window and registration deadlines pending confirmation</p><p class="gapnote">The source doc marks these for verification with the Registrar before publishing. They are carried on the voter pages in this set, all shown as unconfirmed.</p></div>
- </div>
+   </div>
 </section>
 
 <section class="sect">
@@ -4687,7 +4691,7 @@ html{-webkit-text-size-adjust:100%}
 
 <section class="sect">
  <div class="in narrow">
-  <div class="faqwrap"><h2>Frequently asked questions</h2><details class="faq"><summary>When is the First Parish Court Division A election?</summary><div><p>The open primary is Tuesday, November 3, 2026. A general election, if needed, follows on Saturday, December 12, 2026.</p></div></details><details class="faq"><summary>What does the judge of First Parish Court Division A do?</summary><div><p>Hears civil cases up to $50,000, misdemeanours, first and second offence DWI, and traffic matters arising on the East Bank of Jefferson Parish.</p></div></details><details class="faq"><summary>Who can vote in the First Parish Court Division A race?</summary><div><p>Registered voters on the East Bank of Jefferson Parish, including Metairie, Kenner, Harahan, River Ridge, Jefferson and Elmwood.</p></div></details><details class="faq"><summary>Is this a partisan election?</summary><div><p>Louisiana uses an open primary for this seat. All candidates appear on the same ballot, and all registered voters in the district may participate.</p></div></details><details class="faq"><summary>Why can't judicial candidates say how they would rule?</summary><div><p>Louisiana's Code of Judicial Conduct, Canon 7, prohibits pledges or commitments inconsistent with the impartial performance of judicial duties.</p></div></details></div>
+  <div class="faqwrap"><h2>Frequently asked questions</h2><details class="faq"><summary>When is the First Parish Court Division A election?</summary><div><p>Tuesday, November 3, 2026. Polls are open from 6:00 a.m. to 8:00 p.m.</p></div></details><details class="faq"><summary>What does the judge of First Parish Court Division A do?</summary><div><p>Hears civil cases up to $50,000, misdemeanours, first and second offence DWI, and traffic matters arising on the East Bank of Jefferson Parish.</p></div></details><details class="faq"><summary>Who can vote in the First Parish Court Division A race?</summary><div><p>Registered voters on the East Bank of Jefferson Parish, including Metairie, Kenner, Harahan, River Ridge, Jefferson and Elmwood.</p></div></details><details class="faq"><summary>Is this a partisan election?</summary><div><p>Louisiana uses an open primary for this seat. All candidates appear on the same ballot, and all registered voters in the district may participate.</p></div></details><details class="faq"><summary>Why can't judicial candidates say how they would rule?</summary><div><p>Louisiana's Code of Judicial Conduct, Canon 7, prohibits pledges or commitments inconsistent with the impartial performance of judicial duties.</p></div></details></div>
  </div>
 </section>
 
@@ -5265,9 +5269,7 @@ html{-webkit-text-size-adjust:100%}
  <div class="in narrow">
   <div class="prose lede">
    <p>Election Day is Tuesday, November 3, 2026. Polls are open from 6:00 a.m. to 8:00 p.m. Anyone
-   in line when the polls close must be allowed to vote. If no candidate in a race receives a
-   majority, that race is decided in the general election on Saturday, December 12, 2026, when
-   polls are open 7:00 a.m. to 8:00 p.m.</p>
+   in line when the polls close must be allowed to vote.</p>
    <p><b>First Parish Court, Division A is on the ballot for East Bank voters.</b></p>
   </div>
  </div>
@@ -5277,12 +5279,13 @@ html{-webkit-text-size-adjust:100%}
  <div class="in">
   <p class="kick">Key dates</p>
   <h2>The calendar at a glance</h2>
-  <p class="lead">Election Day is fixed. Everything above it is calculated and still needs
-  confirming.</p>
-  <div class="notice">November 3, 2026 is the open primary. December 12 is the general election if a runoff is required.</div>
-  <div class="gapbox"><p class="gaplabel">Every date on this page is unconfirmed</p><p class="gapnote">The source doc is explicit: these dates are derived from Louisiana's standard statutory intervals, not from a published 2026 calendar. They must be verified against the Louisiana Secretary of State and the Jefferson Parish Registrar of Voters at (504) 736-6191 before go-live, and re-checked monthly through Election Day. A wrong date on a voter information page is the worst error a judicial candidate's site can carry.</p></div><div class="twrap"><table class="ptab dates"><thead><tr><th>Deadline</th><th>Date</th><th></th></tr></thead><tbody><tr><td>Register in person or by mail</td><td>Monday, October 5, 2026</td><td><span class="pend">unconfirmed</span></td></tr><tr><td>Register online at GeauxVote</td><td>Wednesday, October 14, 2026</td><td><span class="pend">unconfirmed</span></td></tr><tr><td>Early voting</td><td>Tue 20 &ndash; Tue 27 October 2026, excluding Sunday</td><td><span class="pend">unconfirmed</span></td></tr><tr><td>Request a mail ballot</td><td>Friday, October 30, 2026</td><td><span class="pend">unconfirmed</span></td></tr><tr><td>Mail ballot must be received</td><td>Monday, November 2, 2026</td><td><span class="pend">unconfirmed</span></td></tr><tr><td><b>Election Day</b></td><td><b>Tuesday, November 3, 2026</b>, 6 a.m. to 8 p.m.</td><td></td></tr><tr><td>General election, if needed</td><td>Saturday, December 12, 2026, 7 a.m. to 8 p.m.</td><td></td></tr></tbody></table></div>
-  <p class="src">Confirm all deadlines with the Jefferson Parish Registrar of Voters at
-  (504) 736-6191 or at the Louisiana Secretary of State's GeauxVote portal.</p>
+  <p class="lead">Every deadline below is published by the Louisiana Secretary of State.</p>
+  <div class="notice">Register by Monday, October 5 in person, by mail or at an OMV office, or by Tuesday, October 13 online at GeauxVote. Early voting runs Tuesday, October 20 to Tuesday, October 27, closed Sunday, October 25.</div>
+  <div class="twrap"><table class="ptab dates"><thead><tr><th>Deadline</th><th>Date</th></tr></thead><tbody><tr><td>Register in person, by mail or at an OMV office</td><td>Monday, October 5, 2026</td></tr><tr><td>Register online at GeauxVote</td><td>Tuesday, October 13, 2026</td></tr><tr><td>Early voting</td><td>October 20 to 27, 2026, closed Sunday</td></tr><tr><td>Early voting hours</td><td>8:30 a.m. to 6:00 p.m.</td></tr><tr><td>Request a mail ballot</td><td>Friday, October 30, by 4:30 p.m.</td></tr><tr><td>Mail ballot must be received</td><td>Monday, November 2, by 4:30 p.m.</td></tr><tr><td><b>Election Day</b></td><td><b>Tuesday, November 3, 2026</b>, 6 a.m. to 8 p.m.</td></tr></tbody></table></div>
+  <p class="src">The two 4:30 p.m. mail ballot deadlines are for civilian voters. Military and
+  overseas voters have their own, later deadlines. Confirm any deadline with the Jefferson
+  Parish Registrar of Voters at (504) 736-6191 or at the Louisiana Secretary of State's
+  GeauxVote portal.</p>
  </div>
 </section>
 
@@ -5306,9 +5309,9 @@ html{-webkit-text-size-adjust:100%}
    <div class="step"><span class="stepn">03</span><div>
     <h3>Decide how you will vote</h3>
     <h4>Vote early</h4>
-    <p>Early voting runs for roughly a week in the second half of October, Monday through Saturday,
-    generally 8:30 a.m. to 6:00 p.m. Any registered Jefferson Parish voter may vote early at any
-    early voting location in the parish. You are not limited to a site near your home.</p>
+    <p>Early voting runs Tuesday, October 20 to Tuesday, October 27, 2026, closed Sunday,
+    October 25, from 8:30 a.m. to 6:00 p.m. Any registered Jefferson Parish voter may vote early
+    at any early voting location in the parish. You are not limited to a site near your home.</p>
     <h4>Vote by mail</h4>
     <p>Louisiana limits mail voting to specific categories, including voters 65 and older, students
     living outside the parish, military and overseas voters, voters with a qualifying disability,
@@ -5349,7 +5352,7 @@ html{-webkit-text-size-adjust:100%}
 <section class="ctaband mid"><div class="in"><div class="ctacopy"><p>One of the races on your ballot is First Parish Court, Division A.</p><span class="ctasub">It is the court most East Bank residents are likeliest to walk into: a traffic citation, a security deposit, a small contract dispute.</span></div><a class="btn pri lg" href="/first-parish-court-division-a">WHAT THIS JUDGE DECIDES</a></div></section>
 <section class="sect band">
  <div class="in narrow">
-  <div class="faqwrap"><h2>Frequently asked questions</h2><details class="faq"><summary>When is the 2026 Louisiana election?</summary><div><p>Tuesday, November 3, 2026 is the open primary. Saturday, December 12, 2026 is the general election for any race requiring a runoff.</p></div></details><details class="faq"><summary>What time do polls open and close in Louisiana?</summary><div><p>For the November 3 election, 6:00 a.m. to 8:00 p.m. For the December 12 Saturday election, 7:00 a.m. to 8:00 p.m. Anyone in line at closing may vote.</p></div></details><details class="faq"><summary>Can I vote early anywhere in Jefferson Parish?</summary><div><p>Yes. Any registered Jefferson Parish voter may use any early voting site in the parish.</p></div></details><details class="faq"><summary>Do I need an ID to vote in Louisiana?</summary><div><p>Yes, photo identification is required. Rules for voters without photo ID changed in 2026; contact the Registrar of Voters at (504) 736-6191 to confirm what applies.</p></div></details><details class="faq"><summary>How do I find my polling place in Jefferson Parish?</summary><div><p>Use the Louisiana Secretary of State's GeauxVote portal or the GeauxVote Mobile app, or call the Registrar at (504) 736-6191.</p></div></details><details class="faq"><summary>Is the First Parish Court judge race on my ballot?</summary><div><p>If you are a registered voter on the East Bank of Jefferson Parish, yes. Check your sample ballot in GeauxVote to be certain.</p></div></details></div>
+  <div class="faqwrap"><h2>Frequently asked questions</h2><details class="faq"><summary>When do I vote for First Parish Court, Division A?</summary><div><p>Tuesday, November 3, 2026. Polls are open from 6:00 a.m. to 8:00 p.m.</p></div></details><details class="faq"><summary>What time do polls open and close in Louisiana?</summary><div><p>For the November 3 election, 6:00 a.m. to 8:00 p.m. Anyone in line at closing may vote.</p></div></details><details class="faq"><summary>Can I vote early anywhere in Jefferson Parish?</summary><div><p>Yes. Any registered Jefferson Parish voter may use any early voting site in the parish.</p></div></details><details class="faq"><summary>Do I need an ID to vote in Louisiana?</summary><div><p>Yes, photo identification is required. Rules for voters without photo ID changed in 2026; contact the Registrar of Voters at (504) 736-6191 to confirm what applies.</p></div></details><details class="faq"><summary>How do I find my polling place in Jefferson Parish?</summary><div><p>Use the Louisiana Secretary of State's GeauxVote portal or the GeauxVote Mobile app, or call the Registrar at (504) 736-6191.</p></div></details><details class="faq"><summary>Is the First Parish Court judge race on my ballot?</summary><div><p>If you are a registered voter on the East Bank of Jefferson Parish, yes. Check your sample ballot in GeauxVote to be certain.</p></div></details></div>
  </div>
 </section>
 
@@ -5398,8 +5401,8 @@ html{-webkit-text-size-adjust:100%}
   <div class="prose lede"><p>Any registered Jefferson Parish voter may vote early, for any reason,
   at any early voting location in the parish. You do not need an excuse and you are not limited to
   a site near your home. For the November 3, 2026 election, early voting runs Tuesday, October 20
-  through Tuesday, October 27, 2026, excluding Sunday, generally 8:30 a.m. to 6:00 p.m.</p></div>
-  <div class="gapbox"><p class="gaplabel">These dates are unconfirmed</p><p class="gapnote">Derived from Louisiana's standard interval of 14 to 7 days before a Tuesday election, not from a published 2026 calendar. Confirm with the Registrar of Voters at (504) 736-6191 before go-live, along with the hours, which the parish has historically run 8:30 a.m. to 6:00 p.m.</p></div>
+  through Tuesday, October 27, 2026, excluding Sunday, October 25, from 8:30 a.m. to 6:00 p.m.</p></div>
+  
  </div>
 </section>
 
@@ -5409,7 +5412,7 @@ html{-webkit-text-size-adjust:100%}
   <h2>Why vote early</h2>
   <p class="lead">Any registered voter in the parish, any site in the parish, no excuse
   required.</p>
-  <div class="notice">Early voting sites are typically open until 6:00 p.m., past the end of most workdays.</div>
+  <div class="notice">Early voting sites are open until 6:00 p.m., past the end of most workdays.</div>
   <div class="mt"></div>
   <div class="cardgrid two">
    <div class="ecard"><h3>No Election Day line</h3><p>Early voting sites are almost always faster
@@ -5419,8 +5422,8 @@ html{-webkit-text-size-adjust:100%}
    <div class="ecard"><h3>A problem found early is fixable</h3><p>If there is an issue with your
    registration, discovering it during early voting leaves you time to resolve it. Discovering it at
    7:45 p.m. on Election Day does not.</p></div>
-   <div class="ecard"><h3>Longer hours</h3><p>Early voting sites are typically open until 6:00 p.m.,
-   past the end of most workdays.</p></div>
+   <div class="ecard"><h3>Longer hours</h3><p>Early voting sites are open until 6:00 p.m., past
+   the end of most workdays.</p></div>
   </div>
  </div>
 </section>
@@ -5435,7 +5438,7 @@ html{-webkit-text-size-adjust:100%}
     <ul class="loclist">
      <li><b>Joseph S. Yenni Building</b><span>1221 Elmwood Park Boulevard, Jefferson, LA 70123</span></li>
      <li><b>Registrar of Voters, Kenner Office (Rivertown)</b><span>408 Minor Street, Kenner, LA 70062</span></li>
-     <li><b>East Bank Regional Library</b><span>Metairie, LA</span></li>
+     <li><b>East Bank Regional Library</b><span>4747 West Napoleon Avenue, Metairie, LA 70001</span></li>
     </ul>
    </div>
    <div>
@@ -5447,7 +5450,7 @@ html{-webkit-text-size-adjust:100%}
     </ul>
    </div>
   </div>
-  <div class="gapbox"><p class="gaplabel">Library addresses and site designations unconfirmed</p><p class="gapnote">The source doc flags that the full addresses of the East Bank and West Bank Regional Library sites need verifying, and that every location must be confirmed as designated for this election. Sites vary between elections, particularly Grand Isle.</p></div>
+  <div class="gapbox"><p class="gaplabel">West Bank Regional Library address unconfirmed</p><p class="gapnote">The campaign confirmed the East Bank Regional Library address on 2026-09-09. The West Bank Regional Library street address still needs verifying, and every location must be confirmed as designated for this election. Sites vary between elections, particularly Grand Isle. Confirm with the Registrar of Voters at (504) 736-6191.</p></div>
  </div>
 </section>
 
@@ -5494,7 +5497,7 @@ html{-webkit-text-size-adjust:100%}
 
 <section class="sect band">
  <div class="in narrow">
-  <div class="faqwrap"><h2>Frequently asked questions</h2><details class="faq"><summary>When is early voting in Jefferson Parish for the November 2026 election?</summary><div><p>Approximately October 20 through October 27, 2026, excluding Sunday. Confirm exact dates with the Registrar of Voters at (504) 736-6191.</p></div></details><details class="faq"><summary>Where can I vote early in Jefferson Parish?</summary><div><p>At any parish early voting site, including the Joseph S. Yenni Building in Jefferson, the Registrar's Kenner office in Rivertown, the East Bank Regional Library in Metairie, the Odom Service Center in Marrero, the West Bank Regional Library in Harvey, and the Grand Isle Multiplex.</p></div></details><details class="faq"><summary>Do I need a reason to vote early in Louisiana?</summary><div><p>No. Early voting is open to every registered voter without an excuse. Mail ballots are the ones with eligibility requirements.</p></div></details><details class="faq"><summary>Can I vote early at any location in Jefferson Parish?</summary><div><p>Yes. Unlike Election Day, when you must vote at your assigned precinct, early voting lets you use any site in the parish.</p></div></details><details class="faq"><summary>What are early voting hours in Jefferson Parish?</summary><div><p>Generally 8:30 a.m. to 6:00 p.m. Confirm with the Registrar before you go.</p></div></details><details class="faq"><summary>What ID do I need to vote early?</summary><div><p>The same photo ID required on Election Day. Contact the Registrar at (504) 736-6191 if you do not have a Louisiana or military photo ID.</p></div></details></div>
+  <div class="faqwrap"><h2>Frequently asked questions</h2><details class="faq"><summary>When is early voting in Jefferson Parish for the November 2026 election?</summary><div><p>Tuesday, October 20 to Tuesday, October 27, 2026, closed Sunday, October 25.</p></div></details><details class="faq"><summary>Where can I vote early in Jefferson Parish?</summary><div><p>At any parish early voting site, including the Joseph S. Yenni Building in Jefferson, the Registrar's Kenner office in Rivertown, the East Bank Regional Library in Metairie, the Odom Service Center in Marrero, the West Bank Regional Library in Harvey, and the Grand Isle Multiplex.</p></div></details><details class="faq"><summary>Do I need a reason to vote early in Louisiana?</summary><div><p>No. Early voting is open to every registered voter without an excuse. Mail ballots are the ones with eligibility requirements.</p></div></details><details class="faq"><summary>Can I vote early at any location in Jefferson Parish?</summary><div><p>Yes. Unlike Election Day, when you must vote at your assigned precinct, early voting lets you use any site in the parish.</p></div></details><details class="faq"><summary>What are early voting hours in Jefferson Parish?</summary><div><p>8:30 a.m. to 6:00 p.m. at every location.</p></div></details><details class="faq"><summary>What ID do I need to vote early?</summary><div><p>The same photo ID required on Election Day. Contact the Registrar at (504) 736-6191 if you do not have a Louisiana or military photo ID.</p></div></details></div>
  </div>
 </section>
 
@@ -5540,11 +5543,10 @@ html{-webkit-text-size-adjust:100%}
 
 <section class="sect">
  <div class="in narrow">
-  <div class="prose lede"><p>To vote in the November 3, 2026 election you must be registered. In
-  Louisiana, the deadline to register in person or by mail is 30 days before the election, and the
-  deadline to register online through GeauxVote is 20 days before. For November 3, that works out to
-  roughly Monday, October 5 and Wednesday, October 14, 2026.</p></div>
-  <div class="gapbox"><p class="gaplabel">Both deadlines are unconfirmed</p><p class="gapnote">They are calculated from Louisiana's statutory intervals, not read off the Secretary of State's published 2026 calendar. Verify both before publishing.</p></div>
+  <div class="prose lede"><p>To vote in the November 3, 2026 election you must be registered. The
+  deadline to register in person, by mail or at an OMV office is Monday, October 5, 2026. The
+  deadline to register online through the GeauxVote system is Tuesday, October 13, 2026.</p></div>
+  
  </div>
 </section>
 
@@ -5561,17 +5563,17 @@ html{-webkit-text-size-adjust:100%}
  <div class="in">
   <p class="kick">How</p>
   <h2>Three ways to register</h2>
-  <p class="lead">Online closes earliest at 20 days out. In person and by mail run to 30.</p>
+  <p class="lead">Online registration closes Tuesday, October 13. In person, by mail and at an OMV office, Monday, October 5.</p>
   <div class="notice">Louisiana requires photo identification at the polls.</div>
   <div class="cardgrid three mt">
    <div class="ecard"><h3>Online</h3><p>Register through the Louisiana Secretary of State's
    GeauxVote portal. You will need a Louisiana driver's licence or state ID. This is the fastest
-   option and it has the latest deadline, but it closes 20 days before the election.</p></div>
+   option and it has the latest deadline, Tuesday, October 13, 2026.</p></div>
    <div class="ecard"><h3>In person</h3><p>Visit any Jefferson Parish Registrar of Voters office, or
    an office of the OMV, and complete the application there.</p></div>
    <div class="ecard"><h3>By mail</h3><p>Download the application from GeauxVote, complete it, and
-   mail it to the Registrar. Mailed applications must be postmarked by the 30-day deadline. If you
-   are close to the deadline, register online or in person instead.</p></div>
+   mail it to the Registrar. Mailed applications must be postmarked by Monday, October 5, 2026. If
+   you are close to the deadline, register online or in person instead.</p></div>
   </div>
  </div>
 </section>
@@ -5640,7 +5642,7 @@ html{-webkit-text-size-adjust:100%}
 
 <section class="sect band">
  <div class="in narrow">
-  <div class="faqwrap"><h2>Frequently asked questions</h2><details class="faq"><summary>What is the deadline to register to vote in Louisiana for the November 2026 election?</summary><div><p>Approximately October 5, 2026 in person or by mail, and October 14, 2026 online. Confirm with the Registrar of Voters at (504) 736-6191.</p></div></details><details class="faq"><summary>What ID do I need to vote in Louisiana?</summary><div><p>A Louisiana driver's licence, Louisiana special ID, LA Wallet digital licence, U.S. military ID, or another generally recognised photo ID with your name and signature.</p></div></details><details class="faq"><summary>Can I vote in Louisiana without a photo ID?</summary><div><p>Louisiana's rules for voters without photo ID changed in 2026. Contact the Jefferson Parish Registrar of Voters at (504) 736-6191 to confirm what documentation is required.</p></div></details><details class="faq"><summary>Where is the Jefferson Parish Registrar of Voters?</summary><div><p>The main office is at 1221 Elmwood Park Blvd., Suite 502, Jefferson, LA 70123, (504) 736-6191, with additional offices in Kenner, Marrero and Grand Isle.</p></div></details><details class="faq"><summary>How do I check if I am registered to vote in Jefferson Parish?</summary><div><p>Use the Louisiana Secretary of State's GeauxVote portal or the GeauxVote Mobile app, or call the Registrar.</p></div></details><details class="faq"><summary>Do I need to re-register if I moved within Jefferson Parish?</summary><div><p>You need to update your registration. A move within the parish can change your precinct, which determines where you vote on Election Day.</p></div></details></div>
+  <div class="faqwrap"><h2>Frequently asked questions</h2><details class="faq"><summary>What is the deadline to register to vote in Louisiana for the November 2026 election?</summary><div><p>Monday, October 5, 2026 in person, by mail or at an OMV office, and Tuesday, October 13, 2026 online through GeauxVote.</p></div></details><details class="faq"><summary>What ID do I need to vote in Louisiana?</summary><div><p>A Louisiana driver's licence, Louisiana special ID, LA Wallet digital licence, U.S. military ID, or another generally recognised photo ID with your name and signature.</p></div></details><details class="faq"><summary>Can I vote in Louisiana without a photo ID?</summary><div><p>Louisiana's rules for voters without photo ID changed in 2026. Contact the Jefferson Parish Registrar of Voters at (504) 736-6191 to confirm what documentation is required.</p></div></details><details class="faq"><summary>Where is the Jefferson Parish Registrar of Voters?</summary><div><p>The main office is at 1221 Elmwood Park Blvd., Suite 502, Jefferson, LA 70123, (504) 736-6191, with additional offices in Kenner, Marrero and Grand Isle.</p></div></details><details class="faq"><summary>How do I check if I am registered to vote in Jefferson Parish?</summary><div><p>Use the Louisiana Secretary of State's GeauxVote portal or the GeauxVote Mobile app, or call the Registrar.</p></div></details><details class="faq"><summary>Do I need to re-register if I moved within Jefferson Parish?</summary><div><p>You need to update your registration. A move within the parish can change your precinct, which determines where you vote on Election Day.</p></div></details></div>
  </div>
 </section>
 
@@ -5855,7 +5857,7 @@ html{-webkit-text-size-adjust:100%}
 <section class="sect">
  <div class="in read">
   <h2>What he is asking for</h2>
-  <div class="prose"><p>Michael is asking for your vote on Tuesday, November 3, 2026. Early voting runs October 20 to 27 <span class="cf" title="Derived from Louisiana's standard statutory intervals, not read off a published 2026 calendar. Confirm with the Jefferson Parish Registrar of Voters on (504) 736-6191 before publishing.">confirm</span>, and every date and deadline is on the voting page.</p><p>Given six years, he would come prepared, apply the law as it is written, and treat everyone who walks in with respect. That is the whole of it, and he can keep it.</p><p>Michael Marsiglia, Candidate for Judge, First Parish Court, Division A</p></div>
+  <div class="prose"><p>Michael is asking for your vote on Tuesday, November 3, 2026. Early voting runs October 20 to 27, and every date and deadline is on the voting page.</p><p>Given six years, he would come prepared, apply the law as it is written, and treat everyone who walks in with respect. That is the whole of it, and he can keep it.</p><p>Michael Marsiglia, Candidate for Judge, First Parish Court, Division A</p></div>
  </div>
 </section>
 <section class="sect">
@@ -6131,8 +6133,8 @@ html{-webkit-text-size-adjust:100%}
 </section>
 <section class="sect">
  <div class="in read">
-  <h2>Every date on this page is unconfirmed</h2>
-  <div class="prose"><p>The dates below are derived from Louisiana's standard statutory intervals, not read off a published 2026 calendar. Confirm every one with the Jefferson Parish Registrar of Voters on (504) 736-6191, or through the Louisiana Secretary of State's GeauxVote portal, before relying on it.</p></div>
+  <h2>Where these dates come from</h2>
+  <div class="prose"><p>Every date below is published by the Louisiana Secretary of State for the November 3, 2026 election. To check your registration or find your polling place, use the Secretary of State's GeauxVote portal, or call the Jefferson Parish Registrar of Voters on (504) 736-6191.</p></div>
  </div>
 </section>
 <section class="sect band">
@@ -6168,7 +6170,7 @@ html{-webkit-text-size-adjust:100%}
 <section class="sect">
  <div class="in read">
   <h2>How to vote</h2>
-  <div class="prose"><p>Election day is Tuesday, November 3, 2026, and polls are open from 6:00 a.m. to 8:00 p.m. You vote at the precinct assigned to your registered address.</p><p>Early voting runs from October 20 to 27, 8:30 a.m. to 6:00 p.m., at parish-wide locations. All early voting sites are closed on Sunday, October 25. Bring a valid photo identification: a driver's licence, a state ID, a passport or a military ID.</p><p>To register, the deadline is Monday, October 5 in person, by mail or at an OMV office, or Tuesday, October 13 through the GeauxVote online system. To request a mail ballot, the deadline is Friday, October 30 at 4:30 p.m.</p><p>If a runoff is required, it is scheduled for Saturday, December 12, 2026.</p><p>Confirm any date or location with the Registrar of Voters before relying on it. Dates and locations can change.</p></div>
+  <div class="prose"><p>Election day is Tuesday, November 3, 2026, and polls are open from 6:00 a.m. to 8:00 p.m. You vote at the precinct assigned to your registered address.</p><p>Early voting runs from October 20 to 27, 8:30 a.m. to 6:00 p.m., at parish-wide locations. All early voting sites are closed on Sunday, October 25. Bring a valid photo identification: a driver's licence, a state ID, a passport or a military ID.</p><p>To register, the deadline is Monday, October 5 in person, by mail or at an OMV office, or Tuesday, October 13 through the GeauxVote online system. To request a mail ballot, the deadline is Friday, October 30 at 4:30 p.m.</p><p>Confirm any date or location with the Registrar of Voters before relying on it. Dates and locations can change.</p></div>
  </div>
 </section>
 <section class="sect band">
